@@ -3,12 +3,11 @@
 </template>
 
 <script>
-    export default {
-
-        computed: {
-            counter() {
-                return this.$store.state.counter;
-            }
-        }
+export default {
+  computed: {
+    counter() {
+      return this.$store.getters.singleCounter;
     }
+  }
+};
 </script>
